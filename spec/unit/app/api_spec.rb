@@ -65,7 +65,7 @@ module ExpenseTracker
       context "when expenses exist on the given date" do
         before do
           allow(ledger).to receive(:expenses_on)
-                             .with("2017-06-10")
+                             .with("2017-06-12")
                              .and_return(["expense_1", "expense_2"])
         end
 
